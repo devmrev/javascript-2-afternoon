@@ -15,8 +15,8 @@
 */
 
 //Code here
-
-
+const me = { name: 'a', age: 4, }
+// alert(me.name)
 
 ////////// PROBLEM 2 //////////
 
@@ -26,6 +26,7 @@
 */
 
 //Code here
+const favoriteThings ={ band: 'a', food: 'a', person: 'a', book: 'a', movie: 'a', holiday: 'a' }
 
 
 
@@ -34,7 +35,8 @@
 */
 
 //Code here
-
+favoriteThings.car = 'a';
+favoriteThings.brand = 'a'; 
 
 
 /*
@@ -42,6 +44,8 @@
 */
 
 //Code here
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 
@@ -56,7 +60,10 @@
 */
 
 //Code here
-
+const backPack = {} 
+const item = 'firstPocket';
+backPack[item] = 'chapstick'; 
+backPack.color = 'blue';  
 
 
 /*
@@ -64,7 +71,7 @@
 */
 
 //Code here
-
+// alert(backPack)
 
 
 /*
@@ -74,6 +81,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
+console.log(backPack); 
 
 
 
@@ -97,7 +105,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis'; 
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -120,7 +129,7 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection = {}
 
 
 /*
@@ -129,7 +138,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = () => alert('hello');
+methodCollection.logHello = () => console.log('hello'); 
 
 
 /*
@@ -137,8 +147,8 @@ var user2 = {
 */
 
 //Code Here
-
-
+// methodCollection.alertHello()
+methodCollection.logHello()
 
 ////////// PROBLEM 6 //////////
 
@@ -148,7 +158,8 @@ var user2 = {
 */
 
 //Code Here
-
+// const makePerson = (name, birthday, ssn) => { name, birthday, ssn }; FAIL 
+const makePerson = (name, birthday, ssn) =>  { return { name, birthday, ssn }; }
 
 
 ////////// PROBLEM 7 //////////
@@ -159,5 +170,7 @@ var user2 = {
 */
 
 //Code Here
-
+makeCard = (cardNumber, expirationDate, securityCode) => {
+  return { cardNumber, expirationDate, securityCode }; 
+}
 
